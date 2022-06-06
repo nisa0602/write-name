@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CRUD HTML and pure JS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Students in Your Class</h1>
+
+            <div class="the-form">
+                <form id="form" onsubmit="formSubmit()">
+                    <label for="name">Write Here!</label>
+                    <input type="text" name="name" id="input">
+                    <div id="submit-btn">
+                        <button type="submit">Add</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="names">
+                <h2>The Lists</h2>
+                <div id="list">
+                    <h4 id="name1">A</h4>
+                    <span class="opt">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
