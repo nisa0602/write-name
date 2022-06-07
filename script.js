@@ -29,5 +29,5 @@ let form = document.getElementById("form");
 
 function showData(){
     let input = document.getElementById("input").value;
-    alert(input);
+    document.getElementById("name1").innerHTML = input;
 }
